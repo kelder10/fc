@@ -43,10 +43,18 @@ function updateFlashcard() {
 
     image.src = flashcards[currentIndex].image;
     text.innerText = flashcards[currentIndex].text;
+
+    image.style.width = '';
+    image.style.height = '';
+
+    if (flashcards[currentIndex].text === 'No' || flashcards[currentIndex].text === 'Yes') {
+        image.style.width = '150px'; 
+        image.style.height = '150px';
+    }
 }
 
 function previousFlashcard() {
-    currentIndex = (currentIndex - 1) % flashcards.length;
+    currentIndex = (currentIndex - 1 + flashcards.length) % flashcards.length; 
     updateFlashcard();
 }
 
