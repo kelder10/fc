@@ -46,11 +46,6 @@ function updateFlashcard() {
 
     image.style.width = '';
     image.style.height = '';
-
-    if (flashcards[currentIndex].text === 'No' || flashcards[currentIndex].text === 'Yes') {
-        image.style.width = '50px'; 
-        image.style.height = '50px';
-    }
 }
 
 function previousFlashcard() {
