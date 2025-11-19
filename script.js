@@ -48,8 +48,8 @@ function updateFlashcard() {
     image.style.height = '';
 
     if (flashcards[currentIndex].text === 'No' || flashcards[currentIndex].text === 'Yes') {
-        image.style.width = '150px'; 
-        image.style.height = '150px';
+        image.style.width = '50px'; 
+        image.style.height = '50px';
     }
 }
 
