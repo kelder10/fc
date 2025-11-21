@@ -8,7 +8,7 @@ const flashcards = [
     { image: 'images/bossBaby.png', text: 'Baby' },
     { image: 'images/goSign.png', text: 'Go' },
     { image: 'images/yesSign.png', text: 'Yes' },
-    { image: 'images/noSign.png', text: 'No' },
+    { image: 'images/no.png', text: 'No' },
     { image: 'images/more.png', text: 'More' },
     { image: 'images/help.png', text: 'Help' },
     { image: 'images/eat.png', text: 'Eat' },
