@@ -40,26 +40,13 @@ function updateFlashcard() {
     const flashcard = document.getElementById('flashcard');
     const image = flashcard.querySelector('.flashcard-image');
     const text = flashcard.querySelector('.flashcard-text');
-    
+
     image.src = flashcards[currentIndex].image;
     text.innerText = flashcards[currentIndex].text;
-    
-    // Clear any existing custom classes
-    image.className = 'flashcard-image';
-    
-    // Add custom classes based on the current flashcard
-    if (flashcards[currentIndex].text === 'Luca') {
-        image.classList.add('resize-luca');
-    } else if (flashcards[currentIndex].text === 'Mama') {
-        image.classList.add('resize-mama');
-    }
-    
-    image.style.width = '';
-    image.style.height = '';
 }
 
 function previousFlashcard() {
-    currentIndex = (currentIndex - 1 + flashcards.length) % flashcards.length; 
+    currentIndex = (currentIndex - 1) % flashcards.length;
     updateFlashcard();
 }
 
